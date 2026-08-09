@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-logo{
+    height: 40px;
+}
+
+.header-nav-list{
+    display: flex;
+    gap: 30px;
+}
+.header-nav-item{
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: opacity 0.2;
+}
+
+.header-nav-item .en{
+    display: block;
+    font-size: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.header-nav-item a:hover .en{
+    opacity: 0.8;
+}
+
+
+.header-nav-item .ja{
+    display: block;
+    font-size: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.header-nav-item a:hover .ja {
+    opacity: 0.8;
+}
+
+.header-contact{}
+.header-contact-btn{
+    align-items: center;
+    background-color: #F79214;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 38px;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    height: 40px;
+    padding: 0 20px;
+    transition: opacity 0.2s;
+}
+
+main {
+    width: 100%;
+    position: relative; 
+    overflow: hidden; 
+}
+
+.FirstView{
+    display: flex;
+    max-width: 1200px;
+    margin:auto;
+    align-items: center;
+}
+
+.FirstView-image{
+    display: flex; /* 写真を配置するための入れ物 */
+}
+.FirstView-image-left{
+    position: absolute;
+    top: 0px;
+    left: -50px;
+    z-index: -1;
+}
+.FirstView-image-right{
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    z-index: -1;
+}
+.FirstView-image-oval{
+    position: absolute;
+    top: 84px;
+    left: -70px;
+    z-index: -1;
+}
+.FirstView-image-mainvisual{
+    display: block;
+    position: absolute;
+    top: -70px;
+    right: 0;
+    width: 775px;
+}
+
+.FirstView-content{
+    max-width: 1040px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding-top: 219px;
+}
+
+.FirstView-content-image{
+    position: absolute;
+    top: 100px;
+    right: 180px;
+}
+
+.FirstView-content-title{
+    display: flex;
+    margin-left: 0;
+    color: #333;
+    font-family: "Lato", sans-serif;
+    font-size: 42px;
+    margin-bottom: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.FirstView-content-caption{
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.FirstView-content-btn{
+    display: inline-block;
+    padding: 20px 60px;
+    background-color: #ff9100;
+    color: #fff;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.FirstView-content-btn:hover {
+    background-color: #f78b00;
+}
