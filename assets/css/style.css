@@ -9,6 +9,11 @@ header{
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+a {
+    text-decoration: none;
+}
+
+
 .header-logo{
     height: 40px;
 }
@@ -113,11 +118,18 @@ main {
     position: relative;
     padding-top: 219px;
 }
+.FirstView-content-inner {
+    position: relative;
+    right: 300px;
+}
+
 
 .FirstView-content-image{
     position: absolute;
-    top: 100px;
-    right: 180px;
+    top: -100px;
+    right: -100px;
+    width: 160px;
+    z-index: 2;
 }
 
 .FirstView-content-title{
@@ -148,4 +160,134 @@ main {
 }
 .FirstView-content-btn:hover {
     background-color: #f78b00;
+}
+
+/* --- スマホ表示用コード--- */
+@media screen and (max-width: 767px) {
+
+
+    main {
+        width: 100% !important;
+        overflow: hidden !important; /* absoluteで飛び出した画像をここでカット */
+        position: relative !important;
+    }
+
+    .FirstView {
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    header {
+        padding: 0;
+        height: 40px;
+    }
+
+    .header-logo {
+        height: 20px;
+    }
+    .header-logo img {
+        height: 100%;
+        width: auto;
+    }
+
+
+    .header-nav,
+    .header-contact {
+        display: none;
+        max-width: 100%;
+        margin: 0 16px;
+    }
+
+    .hamburger-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 22px;
+        height: 16px;
+    }
+
+    .hamburger-btn span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #707070;
+        border-radius: 2px;
+    }
+
+    .FirstView {
+        flex-direction: column;
+    }
+
+    
+    .FirstView-image {
+        position: relative;
+        width: 100%;
+        height: 220px;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+    .FirstView-image-left {
+        top: 0;
+        left: -15px;
+        width: 100px;
+    }
+
+    .FirstView-image-oval {
+        top: 30px;
+        left: 20px;
+        width: 160px;
+    }
+
+    .FirstView-image-mainvisual {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 230px;
+    }
+
+    .FirstView-image-right {
+        display: none;
+    }
+
+    .FirstView-content {
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .FirstView-content-inner {
+        position: relative;
+        right: 0;
+    }
+
+    .FirstView-content-image {
+        top: 0px;
+        right: 0;
+        width: 100px;
+    }
+
+    .FirstView-content-title {
+        display: block;
+        font-size: 22px;
+        line-height: 1.4;
+        margin-bottom: 20px;
+        padding-right: 75px;
+    }
+
+    .FirstView-content-btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 16px 0;
+        font-size: 16px;
+        border-radius: 30px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+    }
+
+    .FirstView-content-caption {
+        font-size: 11px;
+        line-height: 1.5;
+        margin-bottom: 0;
+    }
 }
