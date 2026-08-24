@@ -14,8 +14,11 @@ a {
 }
 
 
-.header-logo{
+.header-logo-pc{
     height: 40px;
+}
+.header-logo-sp{
+    display: none;
 }
 
 .header-nav-list{
@@ -110,6 +113,10 @@ main {
     right: 0;
     width: 775px;
 }
+.FirstView-image-mainvisual-sp{
+    display: none;
+}
+
 
 .FirstView-content{
     max-width: 1040px;
@@ -182,10 +189,14 @@ main {
         height: 40px;
     }
 
-    .header-logo {
-        height: 20px;
+    .header-logo-pc {
+        display: none;
     }
-    .header-logo img {
+    .header-logo-sp {
+        height: 20px;
+        display: block;
+    }
+    .header-logo-sp img {
         height: 100%;
         width: auto;
     }
@@ -228,22 +239,19 @@ main {
     }
 
     .FirstView-image-left {
-        top: 0;
-        left: -15px;
-        width: 100px;
+        display: none;
     }
 
     .FirstView-image-oval {
-        top: 30px;
-        left: 20px;
-        width: 160px;
+        display: none;
     }
 
     .FirstView-image-mainvisual {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 230px;
+        display: none;
+    }
+    .FirstView-image-mainvisual-sp {
+        display: block;
+        width: 100%;
     }
 
     .FirstView-image-right {
